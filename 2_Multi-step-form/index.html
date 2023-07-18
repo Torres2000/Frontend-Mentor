@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Varios Pasos</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="import" href="component.html">
+</head>
+
+<body>
+
+
+    <main class="contenedor-general">
+
+        <div class="contenido">
+            <div class="contenedor-izquierdo">
+                <div class="pasos">
+                    <div>
+                        <span class="active" id="primer-paso">1</span>
+                    </div>
+                    <div>
+                        <h3>Paso 1</h3>
+                        <h2>Tu Información</h2>
+                    </div>
+
+                </div>
+                <div class="pasos">
+
+                    <div>
+                        <span id="segundo-paso" id="segundo-paso">2</span>
+                    </div>
+                    <div>
+                        <h3>Paso 2</h3>
+                        <h2>Seleccionar Plan</h2>
+                    </div>
+                </div>
+                <div class="pasos">
+
+                    <div>
+                        <span id="tercer-paso">3</span>
+                    </div>
+                    <div>
+                        <h3>Paso 3</h3>
+                        <h2>Complementos</h2>
+                    </div>
+                </div>
+                <div class="pasos">
+
+                    <div>
+                        <span id="cuarto-paso">4</span>
+                    </div>
+                    <div>
+                        <h3>Paso 4</h3>
+                        <h2>Resumen</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="contenedor-derecho">
+                <!--Contenedor de los pasos-->
+                <div class="contenedor-pasos">
+                    <section class="paso1" id="paso1">
+                        <div>
+                            <div class="primerdiv">
+                                <span class="subtitulo">Información Personal</span>
+                                <p class="descripcion">Proporcione su nombre, dirección de correo electrónico y número de
+                                    teléfono</p>
+
+                                <form action="" class="formulario" id="formulario">
+                                    <!-- Grupo: Nombre -->
+                                    <div class="formulario__grupo" id="grupo__nombre">
+                                        <label for="nombre" class="formulario__label">Nombre</label>
+                                        <div class="formulario__grupo-input">
+                                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                        </div>
+                                        <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras</p>
+                                    </div>
+                                    <!-- Grupo: Correo Electronico -->
+                                    <div class="formulario__grupo" id="grupo__correo">
+                                        <label for="correo" class="formulario__label">Correo Electrónico</label>
+                                        <div class="formulario__grupo-input">
+                                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                        </div>
+                                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                                    </div>
+                                    <!-- Grupo: Teléfono -->
+                                    <div class="formulario__grupo" id="grupo__telefono">
+                                        <label for="telefono" class="formulario__label">Teléfono</label>
+                                        <div class="formulario__grupo-input">
+                                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567" require>
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                        </div>
+                                        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+
+                    </section>
+
+                    <section class="paso2" id="paso2">
+                        <div class="plan">
+                            <span class="subtitulo">Selecciona tu plan</span>
+                            <p class="descripcion">Tiene la opción de facturación mensual o anual</p>
+                            <div class="planes">
+                                <div class="arcade" id="arcade" onclick="planArcade()">
+                                    <div id="opciones">
+                                        <img src="./iconos/icon-arcade.svg" alt="Arcade">
+                                        <div class="nombres">
+                                            <span class="nombre-plan">Arcade</span>
+                                            <span id="valor-arcade">$9/Mensual</span>
+                                            
+                                        </div>
+                                    </div>
+                                    <span id="mes-gratis1">2 Meses Gratis</span>
+                                </div>
+                                <div class="advance" id="advance" onclick="planAdvance()">
+                                    <div id="opciones">
+                                        <img src="./iconos/icon-advanced.svg" alt="advance">
+                                    <div class="nombres">
+                                        <span class="nombre-plan">Advance</span>
+                                        <span id="valor-advance">$12/Mensual</span>
+
+                                    </div>
+                                    </div>
+                                    <span id="mes-gratis2">2 Meses Gratis</span>
+                                    
+                                </div>
+                                <div class="pro" id="pro" onclick="planPro()">
+                                    <div id="opciones">
+                                        <img src="./iconos/icon-pro.svg" alt="pro">
+
+                                    <div class="nombres">
+                                        <span class="nombre-plan">Pro</span>
+                                        <span id="valor-pro">$15/Mensual</span>
+                                    </div>
+                                    </div>
+                                    <span id="mes-gratis3">2 Meses Gratis</span>
+                                    
+                                </div>
+
+                            </div>
+                            <div class="forma">
+                                <div>
+                                    <p>Mensual</p>
+                                </div>
+                                <div>
+                                    <label class="switch">
+                                        <input type="checkbox" class="onoffswitch-checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <p>Anual</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        
+                    </section>
+
+                    <section class="paso3" id="paso3">
+                        <div class="contenido-paso3">
+                            <span class="subtitulo">Recoger complementos</span>
+                            <p class="descripcion">Los complementos ayudan a mejorar su experiencia de juego</p>
+                            <div class="complementos">
+                                <div class="complemento-container" id="servicio-linea" >
+                                    <div>
+                                        <input class="casilla" type="checkbox" id="casilla-complemento">
+
+                                    </div>
+                                    <div class="complemento-servicios">
+                                        <h4>Servicio en línea</h4>
+
+                                        <p>Acceso a juegos multijugador </p>
+                                    </div>
+                                    <div class="valor">
+                                        <p id="valor-servicio-linea">+$1/Mes</p>
+                                    </div>
+                                </div>
+                                <div class="complemento-container" id="almacenamiento" >
+                                    <div>
+                                        <label class="container">
+                                            <input class="casilla" type="checkbox" id="casilla-almacenamiento">
+                                            <div class="checkmark"></div>
+                                        </label>
+                                    </div>
+                                    <div class="complemento-servicios">
+                                        <h4>Almacenamiento más grande</h4>
+
+                                        <p>1 TB extra de ahorro de nubes </p>
+                                    </div>
+                                    <div class="valor">
+                                        <p id="valor-almacenamiento">+$2/Mes</p>
+                                    </div>
+                                </div>
+                                <div class="complemento-container" id="perfil-personalizado" >
+                                    <div>
+                                        <label class="container">
+                                            <input class="casilla" type="checkbox" id="casilla-perfil">
+                                            <div class="checkmark"></div>
+                                        </label>
+                                    </div>
+                                    <div class="complemento-servicios">
+                                        <h4>Perfil personalizable</h4>
+
+                                        <p>Tema personalizado en tu perfil</p>
+                                    </div>
+                                    <div class="valor">
+                                        <p id="valor-perfil-personalizable">+$2/Mes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    
+                    </section>
+
+                    <section class="paso4" id="paso4">
+                        <div class="contenido-paso4">
+                            <span class="subtitulo">Terminando</span>
+                            <p class="descripcion">Verifique que todo se vea bien antes de confirmar</p>
+                            <div class="resumen">
+                                <div class="plan-obtenido">
+                                    <div>
+                                        <div>
+                                            <span id="plan-seleccionado">No seleccionado</span>
+                                            <span id="modalidad">(Ninguna)</span>
+                                        </div>
+                                        <div>
+                                            <a id="cambio" onclick="paso3atras()">Cambiar</a>
+                                        </div>
+                                    </div>
+                                    <div id="precio-plan">
+                                        <span id="precio-final-plan">$0/--</span>
+                                    </div>
+                                </div>
+                                <div class="complemento-obtenido">
+
+                                    <div id="com-servicio" class="complet">
+                                        <span>Servicio en línea </span>
+                                        <span id="precio-servicio-linea">+$1/Mensual</span>
+                                    </div>
+                                    <div id="com-almacenamiento" class="complet">
+                                        <span>Almacenamiento más grande</span>
+                                        <span id="precio-almacenamiento">+$2/Mensual</span>
+                                    </div>
+                                    <div id="com-perfil" class="complet">
+                                        <span>Perfil personalizable</span>
+                                        <span id="precio-perfil">+$2/Mensdgdual</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="valor-total" id="valor-total">
+                                <div>
+                                    <span id="total"> Total (</span>
+                                    <span id="modalidad-total"></span>
+                                    <span>)</span>
+                                </div>
+                                <div class="precio-total">
+                                    <span id="precio-total">$0/--</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Boton paso 4-->
+                    
+                        
+                    </section>
+
+                    <section class="final" id="final">
+                        <div>
+                            <img src="./iconos/icon-thank-you.svg" alt="">
+                            <span>Gracias!</span>
+                            <p>
+                                Gracias por confirmar su suscripción! Esperamos que te diviertas usando nuestra plataforma.
+                                Si alguna vez necesita ayuda, no dude para enviarnos un correo electrónico a
+                                support@loremgaming.com.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+                <!--Botones-->
+                <div class="botonesFotter">
+                    <!--Boton paso 1-->
+                    <div class="boton" id="boton1">
+                        <input type="submit" class="boton1" onclick="enviar()" value="Siguiente paso">
+                    </div>
+                    <!--Boton paso 2-->
+                    <div class="botones" id="boton2">
+                        <div>
+                            <a class="paso2-regresar"  onclick="paso2atras()"> Regresar</a>
+                        </div>
+                        <div>
+                            <input type="button" class="boton2" onclick="paso2siguiente()" value="Siguiente paso">
+                        </div>
+
+                    </div>
+                    <!--Boton paso 3-->
+                    <div class="botones" id="boton3">
+                        <div>
+                            <a class="paso3-regresar" onclick="paso3atras()"> Regresar</a>
+                        </div>
+                        <div>
+                            <input type="button" class="boton3" onclick="paso3siguiente()" value="Siguiente paso">
+                        </div>
+
+                    </div>
+                    <!--Boton paso 4-->
+                    <div class="botones" id="boton4">
+                        <div>
+                            <a class="paso4-regresar" onclick="paso4atras()"> Regresar</a>
+                        </div>
+                        <div>
+                            <input type="button" class="boton4" onclick="btnConfirmar()" value="Confirmar">
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+        
+    </main>
+
+    
+    <script src="./Script/script.js"></script>
+</body>
+
+</html>

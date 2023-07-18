@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce product page</title>
+
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link rel="stylesheet" href="estilos/animate.min.css" />
+  </head>
+  <body>
+    <header>
+      <section class="container__menu">
+        <img src="./images/icon-menu.svg" alt="Menu" id="btn_menu" />
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Logo" />
+        </div>
+        <div class="menu">
+          <div id="back_menu"></div>
+          <nav id="nav">
+            <div class="cerrar-menu">
+              <img src="./images/icon-close.svg" alt="Cerrar" id="btn_cerrar_menu" />
+            </div>
+            <div class="opciones">
+              <div class="opciones1">
+                <div class="opciones2">
+                  <a href="#" id="características">Collections</a>
+                </div>
+                <div class="opciones2">
+                  <a href="#" id="compañia">Men</a>
+                </div>
+                <div class="opciones2">
+                  <a href="#" id="carreras">Women</a>
+                </div>
+                <div class="opciones2">
+                  <a href="#" id="acercade">About</a>
+                </div>
+                <div class="opciones2">
+                  <a href="#" id="acercade">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="navbar-right">
+          <div style="position: relative">
+            <img src="./images/icon-cart.svg" alt="icon-cart" id="icon-cart" />
+            <input type="text" class="eje-cantidad" id="total-cart" value="0" readonly />
+          </div>
+
+          <img src="./images/image-avatar.png" alt="image-avatar" id="image-avatar" />
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="principal">
+        <section class="imagenes">
+          <div class="seleccion" id="img-seleccionada">
+            <img src="./images/image-product-1.jpg" alt="" class="animate__animated" id="img-seleccionada1" />
+            <img src="./images/image-product-2.jpg" alt="" class="animate__animated" id="img-seleccionada2" />
+            <img src="./images/image-product-3.jpg" alt="" class="animate__animated" id="img-seleccionada3" />
+            <img src="./images/image-product-4.jpg" alt="" class="animate__animated" id="img-seleccionada4" />
+          </div>
+          <div class="elegir">
+            <img src="./images/image-product-1.jpg" alt="img" class="seleccionada animate__animated" id="imagen-product-1" />
+            <img src="./images/image-product-2.jpg" alt="img" class="animate__animated" id="imagen-product-2" />
+            <img src="./images/image-product-3.jpg" alt="img" class="animate__animated" id="imagen-product-3" />
+            <img src="./images/image-product-4.jpg" alt="img" class="animate__animated" id="imagen-product-4" />
+          </div>
+        </section>
+        <!--Mostrar imagen en grande-->
+        <section class="vista-grande animate__animated" id="vista-grande">
+          <section class="imagenes1 animate__animated" id="imagenes1">
+            <div class="cerrar1" id="cerrar1">
+              <img src="./images/icon-close.svg" alt="" />
+            </div>
+            <div class="seleccion1">
+              <!--img 1-->
+              <div id="img-seleccionada11" class="animate__animated">
+                <img src="./images/image-product-1.jpg" alt="" class="img-seleccion" />
+                <div class="botones" id="icon-previous">
+                  <img src="./images/icon-previous.svg" class="iconos" alt="Atras" id="atras1" />
+                </div>
+                <div class="botones" id="icon-next">
+                  <img src="./images/icon-next.svg" class="iconos" alt="Atras" id="siguiente1" />
+                </div>
+              </div>
+              <!--img 2-->
+              <div id="img-seleccionada22" class="animate__animated">
+                <img src="./images/image-product-2.jpg" alt="" class="img-seleccion" />
+                <div class="botones" id="icon-previous">
+                  <img src="./images/icon-previous.svg" class="iconos" alt="Atras" id="atras2" />
+                </div>
+                <div class="botones" id="icon-next">
+                  <img src="./images/icon-next.svg" class="iconos" alt="Atras" id="siguiente2" />
+                </div>
+              </div>
+              <!--img 3-->
+              <div id="img-seleccionada33" class="animate__animated">
+                <img src="./images/image-product-3.jpg" alt="" class="img-seleccion" />
+                <div class="botones" id="icon-previous">
+                  <img src="./images/icon-previous.svg" class="iconos" alt="Atras" id="atras3" />
+                </div>
+                <div class="botones" id="icon-next">
+                  <img src="./images/icon-next.svg" class="iconos" alt="Atras" id="siguiente3" />
+                </div>
+              </div>
+              <!--img 4-->
+              <div id="img-seleccionada44" class="animate__animated">
+                <img src="./images/image-product-4.jpg" alt="" class="img-seleccion" />
+                <div class="botones" id="icon-previous">
+                  <img src="./images/icon-previous.svg" class="iconos" alt="Atras" id="atras4" />
+                </div>
+                <div class="botones" id="icon-next">
+                  <img src="./images/icon-next.svg" class="iconos" alt="Atras" id="siguiente4" />
+                </div>
+              </div>
+            </div>
+            <div class="elegir1">
+              <img src="./images/image-product-1.jpg" alt="img" class="seleccionada animate__animated" id="imagen-product-11" />
+              <img src="./images/image-product-2.jpg" alt="img" class="animate__animated" id="imagen-product-21" />
+              <img src="./images/image-product-3.jpg" alt="img" class="animate__animated" id="imagen-product-31" />
+              <img src="./images/image-product-4.jpg" alt="img" class="animate__animated" id="imagen-product-41" />
+            </div>
+          </section>
+        </section>
+        <section class="contenido">
+          <h4>Sneaker Company</h4>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll
+            withstand everything the weather can offer.
+          </p>
+          <div id="precios">
+            <div class="precio">
+              <h5>$125.00</h5>
+              <h5>50%</h5>
+            </div>
+            <div>
+              <span>$250.00</span>
+            </div>
+          </div>
+          <div class="add">
+            <div class="cantidad">
+              <img src="./images/icon-minus.svg" alt="" id="menos" />
+              <input type="text" id="cantidad" value="0" readonly />
+              <img src="./images/icon-plus.svg" alt="" id="mas" />
+            </div>
+            <button id="add-cart">
+              <img src="./images/icon-cart.svg" alt="" />
+              Add to cart
+            </button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!--Mostrar  / ocultar cart-->
+    <section class="seccion-cart">
+      <div class="cart" id="cart">
+        <div class="title">Cart</div>
+        <div class="content" id="content">
+          <div class="contenido-cart">
+            <img src="./images/image-product-1.jpg" alt="add-cart" id="img-add-to-cart" />
+            <div class="contenido2">
+              <span>Fall Limited Edition Sneakers</span>
+              <div>
+                <span id="precio">$125.00</span> <span>x</span> <span id="total-producto">0</span>
+                <span id="total-precio">$375.00</span>
+              </div>
+            </div>
+            <img src="./images/icon-delete.svg" alt="" id="img-delete" />
+          </div>
+          <div class="button-chec">
+            <button>Checkout</button>
+          </div>
+        </div>
+        <div class="vacio" id="vacio">You cart is empty</div>
+      </div>
+    </section>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

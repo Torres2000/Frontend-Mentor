@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web Turismo Espacial</title>
+
+    <link rel="stylesheet" href="css/estilos-destination.css">
+
+    <link rel="stylesheet" href="./animate/animate.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container__menu">
+            <div class="logo">
+                <img src="./assets/shared/logo.svg" alt="Logo">
+            </div>
+            <div class="menu">
+                <img src="./assets/shared/icon-hamburger.svg" alt="Menu" id="btn_menu">
+
+                <div id="back_menu"></div>
+                <nav id="nav">
+                    <div class="cerrar-menu">
+                        <img src="./assets/shared/icon-close.svg" alt="Cerrar" id="btn_cerrar_menu">
+                    </div>
+                    <div class="opciones">
+                        <div class="opciones1">
+                            <div class="opciones2 ">
+                                <span>00</span>
+                                <a href="index.html" id="características">HOME</a>
+                            </div>
+                            <div class="opciones2 active">
+                                <span>01</span>
+                                <a href="#" id="compañia">DESTINATION</a>
+                            </div>
+                            <div class="opciones2">
+                                <span>02</span>
+                                <a href="crew.html" id="carreras">CREW</a>
+                            </div>
+                            <div class="opciones2 ">
+                                <span>03</span>
+                                <a href="technology.html" id="acercade">TECHNOLOGY</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!--Contenido-->
+    <div class="contenido-principal-destination">
+        <div id="primer" class="animate__animated animate__bounceInLeft">
+            <span>01</span>
+            <span>PICK YOUR DESTINATION</span>
+        </div>
+
+        <div class="seccion-destination ">
+            <section class="seccion2-destination ">
+
+                <div>
+                    <img src="./assets/destination/image-moon.png" id="img-moon"
+                        class="animate__animated animate__bounceInLeft" alt="Img">
+                    <img src="./assets/destination/image-mars.png" id="img-mars"
+                        class="animate__animated animate__bounceInLeft" alt="Img">
+                    <img src="./assets/destination/image-europa.png" id="img-europa"
+                        class="animate__animated animate__bounceInLeft" alt="Img">
+                    <img src="./assets/destination/image-titan.png" id="img-titan"
+                        class="animate__animated animate__bounceInLeft" alt="Img">
+
+                </div>
+
+
+            </section>
+            <section class="seccion1-destination ">
+                <div class="opciones-destination">
+                    <div id="opcion1" class=" opciones3 active">
+                        <span id="opciones1" onclick="mostrarMoon()">MOON</span>
+                    </div>
+                    <div id="opcion2" class=" opciones3 ">
+                        <span id="opciones2" onclick="mostrarMars()">MARS</span>
+                    </div>
+                    <div id="opcion3" class="  opciones3 ">
+                        <span id="opciones3" onclick="mostrarEuropa()">EUROPA</span>
+                    </div>
+                    <div id="opcion4" class=" opciones3 ">
+                        <span id="opciones4" onclick="mostrarTitan()">TITAN</span>
+                    </div>
+                </div>
+                <div id="moon" class="moon animate__animated animate__bounceInRight">
+                    <div>
+                        <span id="texto2">MOON</span>
+                    </div>
+                    <div>
+                        <p id="texto3">
+                            See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
+                            perspective and come back refreshed. While you’re there, take in some history by visiting
+                            the
+                            Luna 2 and Apollo 11 landing sites
+                        </p>
+                    </div>
+                    <div class="final">
+                        <div>
+                            <span id="texto4">Avg. distance</span>
+                            <span id="texto5">384,400 km </span>
+                        </div>
+                        <div>
+                            <span id="texto4">Est. travel time</span>
+                            <span id="texto5">3 days</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="mars" class="mars animate__animated animate__bounceInRight">
+                    <div>
+                        <span id="texto2">MARS</span>
+                    </div>
+                    <div>
+                        <p id="texto3">
+                            Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest
+                            planetary mountain in our solar system. It’s two and a half times the size of Everest!
+                        </p>
+                    </div>
+                    <div class="final">
+                        <div>
+                            <span id="texto4">Avg. distance</span>
+                            <span id="texto5">225 mil. km </span>
+                        </div>
+                        <div>
+                            <span id="texto4">Est. travel time</span>
+                            <span id="texto5">9 months</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="europa" class="europa animate__animated animate__bounceInRight">
+                    <div>
+                        <span id="texto2">EUROPA</span>
+                    </div>
+                    <div>
+                        <p id="texto3">
+                            The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream.
+                            With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple
+                            relaxation in your snug wintery cabin.
+                        </p>
+                    </div>
+                    <div class="final">
+                        <div>
+                            <span id="texto4">Avg. distance</span>
+                            <span id="texto5">628 mil. km </span>
+                        </div>
+                        <div>
+                            <span id="texto4">Est. travel time</span>
+                            <span id="texto5">3 years</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="titan" class="titan animate__animated animate__bounceInRight">
+                    <div>
+                        <span id="texto2">TITAN</span>
+                    </div>
+                    <div>
+                        <p id="texto3">
+                            The only moon known to have a dense atmosphere other than Earth, Titan is a home away from
+                            home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings
+                            of Saturn. </p>
+                    </div>
+                    <div class="final">
+                        <div>
+                            <span id="texto4">Avg. distance</span>
+                            <span id="texto5">1.6 bil. km</span>
+                        </div>
+                        <div>
+                            <span id="texto4">Est. travel time</span>
+                            <span id="texto5">7 years</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </section>
+
+
+        </div>
+
+
+    </div>
+
+    <div  id="creador">
+        © 2023 Pedro JT
+    </div>
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>

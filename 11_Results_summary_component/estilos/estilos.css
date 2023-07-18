@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+  /*
+  ## Colors
+
+### Primary
+*/
+  --Lightred: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* ## Gradients */
+
+  --Light-slate-blue: hsl(252, 100%, 67%); /* (background)*/
+  --Light-royal-blue: hsl(241, 81%, 54%); /* (background)*/
+  --Violet-blue: hsla(256, 72%, 46%, 1); /* (circle)*/
+  --Persian-blue: hsla(241, 72%, 46%, 0); /* (circle)*/
+
+  /* ### Neutral  */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 98vh;
+  background-color: var(--White);
+  margin: 0;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 4px 4px 32px var(--Light-lavender);
+  border-radius: 32px;
+}
+.section-left {
+  background-image: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 60px 44px 60px;
+  border-radius: 32px;
+}
+.container1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+h4 {
+  color: var(--Pale-blue);
+  margin: 0;
+  font-size: 24px;
+}
+.calificacion-total {
+  color: var(--White);
+  font-size: 70px;
+  font-weight: bold;
+}
+h2 {
+  color: var(--White);
+  margin: 0;
+  font-size: 32px;
+}
+p {
+  color: var(--Light-lavender);
+  text-align: center;
+  font-size: 17px;
+}
+.circulo {
+  background-image: linear-gradient(to bottom, var(--Violet-blue), var(--Persian-blue));
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 32px 0px 20px 0px;
+}
+
+.section-right {
+  /*width: 372px;*/
+  background-color: var(--white);
+  padding: 40px 40px 44px 40px;
+}
+.circulo > p {
+  margin: 0;
+  color: var(--Light-lavender);
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.contenedor {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+h3 {
+  margin: 0;
+  font-size: 24px;
+}
+.reaction,
+.memory,
+.verbal,
+.visual {
+  font-size: 18px;
+}
+.reaction {
+  background-color: rgb(255, 245, 246);
+  color: var(--Lightred);
+}
+.memory {
+  background: rgb(255, 251, 242);
+  color: var(--Orangey-yellow);
+}
+.verbal {
+  background: rgb(241, 251, 250);
+  color: var(--Green-teal);
+}
+.visual {
+  background: rgb(243, 242, 253);
+  color: var(--Cobalt-blue);
+}
+
+button {
+  background-color: var(--Dark-gray-blue);
+  color: var(--White);
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+button:hover {
+  background-image: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+}
+.calificacion {
+  color: black;
+  display: flex;
+  gap: 4px;
+  font-size: 18px;
+}
+.calificacion span:nth-child(1) {
+  font-weight: 800;
+}
+.calificacion span:nth-child(3) {
+  color: var(--Dark-gray-blue);
+}
+.contenedor div:nth-child(1) {
+  display: flex;
+  gap: 14px;
+}
+@media screen and (max-width: 500px) {
+  body {
+    display: initial;
+  }
+  main {
+    grid-template-columns: 1fr;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .section-left {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-top: 24px;
+  }
+
+  .circulo {
+    width: 140px;
+    height: 140px;
+    margin-top: 26px;
+  }
+  .calificacion-total {
+    font-size: 52px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .section-right {
+    padding: 24px 30px 0px 30px;
+  }
+  .container2 {
+    gap: 24px;
+  }
+}

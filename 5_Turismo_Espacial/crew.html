@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web Turismo Espacial</title>
+
+    <link rel="stylesheet" href="css/estilos-crew.css">
+
+    <link rel="stylesheet" href="./animate/animate.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container__menu">
+            <div class="logo">
+                <img src="./assets/shared/logo.svg" alt="Logo">
+            </div>
+            <div class="menu">
+                <img src="./assets/shared/icon-hamburger.svg" alt="Menu" id="btn_menu">
+
+                <div id="back_menu"></div>
+                <nav id="nav">
+                    <div class="cerrar-menu">
+                        <img src="./assets/shared/icon-close.svg" alt="Cerrar" id="btn_cerrar_menu">
+                    </div>
+                    <div class="opciones">
+                        <div class="opciones1">
+                            <div class="opciones2 ">
+                                <span>00</span>
+                                <a href="index.html" id="características">HOME</a>
+                            </div>
+                            <div class="opciones2">
+                                <span>01</span>
+                                <a href="destination.html" id="compañia">DESTINATION</a>
+                            </div>
+                            <div class="opciones2 active">
+                                <span>02</span>
+                                <a href="#" id="carreras">CREW</a>
+                            </div>
+                            <div class="opciones2">
+                                <span>03</span>
+                                <a href="technology.html" id="acercade">TECHNOLOGY</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!--Contenido-->
+    <div class="contenido-principal-crew">
+        <div id="primer" class="animate__animated animate__slideInUp">
+            <span>02</span>
+            <span>MEET YOUR CREW </span>
+        </div>
+
+        <div class="seccion-crew ">
+            
+            <section class="seccion1-crew ">
+
+                <!--Seccion engineer-->
+                <div id="Engineer" class="Engineer animate__animated animate__slideInUp">
+                    <div class="encabezado">
+                        <span id="texto1">FLIGTH ENGINNER</span>
+                        <span id="texto2">ANOUSHED ANSARI</span>
+                    </div>
+                    <div>
+                        <p id="texto3">
+                            Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was
+                            the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the
+                            first Iranian in space.
+                        </p>
+                    </div>
+
+                </div>
+                <!--Seccion Commander-->
+                <div id="Commander" class="Commander animate__animated animate__slideInUp">
+                    <div class="encabezado">
+                        <span id="texto1">Commander Douglas</span>
+                        <span id="texto2">Hurley Douglas</span>
+                    </div>
+                    <div>
+                        <p id="texto3">
+                            Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut.
+                            He launched into space for the third time as commander of Crew Dragon Demo-2.
+                        </p>
+                    </div>
+                </div>
+                <!--Seccion Pilot-->
+                <div id="Pilot" class="Pilot animate__animated animate__slideInUp">
+                    <div class="encabezado">
+                        <span id="texto1">Pilot </span>
+                        <span id="texto2">Victor Glover </span>
+                    </div>
+                    <div>
+                        <p id="texto3">
+                            Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space
+                            Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew
+                            member of Expedition 64, and served as a station systems flight engineer.
+                        </p>
+                    </div>
+                </div>
+                <!--Seccion Mission-->
+                <div id="Mission" class="Mission animate__animated animate__slideInUp">
+                    <div class="encabezado">
+                        <span id="texto1">Mission Specialist</span>
+                        <span id="texto2">Mark Shuttleworth</span>
+                    </div>
+                    <div>
+                        <p id="texto3">
+                            Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the
+                            Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel
+                            to space as a space tourist. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="opciones-crew animate__animated animate__slideInUp">
+                    <div id="opcion1" class=" opciones3 active-boton" onclick="mostrarEngineer()">
+                        
+                    </div>
+                    <div id="opcion2" class=" opciones3 " onclick="mostrarCommander()">
+                        
+                    </div>
+                    <div id="opcion3" class="  opciones3 "  onclick="mostrarPilot()">
+                        
+                    </div>
+                    <div id="opcion4" class=" opciones3 " onclick="mostrarMission()">
+                        
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="seccion2-crew ">
+
+                <div>
+                    <img src="./assets/crew/image-anousheh-ansari.png" id="img-Engineer"
+                        class="animate__animated animate__slideInUp" alt="Img">
+                    <img src="./assets/crew/image-douglas-hurley.png" id="img-Commander"
+                        class="animate__animated animate__slideInUp" alt="Img">
+                    <img src="./assets/crew/image-victor-glover.png" id="img-Pilot"
+                        class="animate__animated animate__slideInUp" alt="Img">
+                    <img src="./assets/crew/image-mark-shuttleworth.png" id="img-Mission"
+                        class="animate__animated animate__slideInUp" alt="Img">
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+
+    </div>
+    <div  id="creador">
+        © 2023 Pedro JT
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

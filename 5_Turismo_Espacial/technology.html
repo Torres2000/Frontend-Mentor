@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web Turismo Espacial</title>
+
+    <link rel="stylesheet" href="css/estilos-technology.css">
+
+    <link rel="stylesheet" href="./animate/animate.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container__menu">
+            <div class="logo">
+                <img src="./assets/shared/logo.svg" alt="Logo">
+            </div>
+            <div class="menu">
+                <img src="./assets/shared/icon-hamburger.svg" alt="Menu" id="btn_menu">
+
+                <div id="back_menu"></div>
+                <nav id="nav">
+                    <div class="cerrar-menu">
+                        <img src="./assets/shared/icon-close.svg" alt="Cerrar" id="btn_cerrar_menu">
+                    </div>
+                    <div class="opciones">
+                        <div class="opciones1">
+                            <div class="opciones2 ">
+                                <span>00</span>
+                                <a href="index.html" id="características">HOME</a>
+                            </div>
+                            <div class="opciones2">
+                                <span>01</span>
+                                <a href="destination.html" id="compañia">DESTINATION</a>
+                            </div>
+                            <div class="opciones2">
+                                <span>02</span>
+                                <a href="crew.html" id="carreras">CREW</a>
+                            </div>
+                            <div class="opciones2 active">
+                                <span>03</span>
+                                <a href="#" id="acercade">TECHNOLOGY</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!--Contenido-->
+    <div class="contenido-principaltechnology">
+        <div id="primer" class="animate__animated animate__lightSpeedInRight">
+            <span>03</span>
+            <span>SPACE LAUNCH 101 </span>
+        </div>
+
+        <div class="secciontechnology ">
+
+            <section class="seccion1technology  animate__animated animate__lightSpeedInLeft">
+                <div class="opcionestechnology">
+                    <div id="opcion1" class=" opciones3 active-boton" onclick="mostrarLaunch()">
+                        <span>1</span>
+                    </div>
+                    <div id="opcion2" class=" opciones3 " onclick="mostrarSpace()">
+                        <span>2</span>
+                    </div>
+                    <div id="opcion3" class="  opciones3 " onclick="mostrarSpaceport()">
+                        <span>3</span>
+                    </div>
+                </div>
+                <div class="technology-texto">
+                    <!--Seccion Launch-->
+                    <div id="Launch" class="Launch animate__animated animate__lightSpeedInRight">
+                        <div class="encabezado">
+                            <span id="texto1">The terminology...</span>
+                            <span id="texto2">Launch vehicle</span>
+                        </div>
+                        <div>
+                            <p id="texto3">
+                                A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload
+                                from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier
+                                rocket is
+                                the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring
+                                sight
+                                on the launch pad!
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--Seccion Space-->
+                    <div id="Space" class="Space animate__animated animate__lightSpeedInRight">
+                        <div class="encabezado">
+                            <span id="texto1">The terminology... </span>
+                            <span id="texto2">Space capsule</span>
+                        </div>
+                        <div>
+                            <p id="texto3">
+                                A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to
+                                reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your
+                                time during the flight. It includes a space gym, cinema, and plenty of other activities
+                                to keep you entertained.
+                            </p>
+                        </div>
+                    </div>
+                    <!--Seccion Spaceport-->
+                    <div id="Spaceport" class="Spaceport animate__animated animate__lightSpeedInRight">
+                        <div class="encabezado">
+                            <span id="texto1">The terminology... </span>
+                            <span id="texto2">Spaceport </span>
+                        </div>
+                        <div>
+                            <p id="texto3">
+                                A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy
+                                to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral,
+                                our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion2technology ">
+
+                <div>
+                    <img src="./assets/technology/image-launch-vehicle-portrait.jpg" id="img-Launch"
+                        class="animate__animated animate__lightSpeedInRight" alt="Img">
+                    <img src="./assets/technology/image-space-capsule-portrait.jpg" id="img-Space"
+                        class="animate__animated animate__lightSpeedInRight" alt="Img">
+                    <img src="./assets/technology/image-spaceport-portrait.jpg" id="img-Spaceport"
+                        class="animate__animated animate__lightSpeedInRight" alt="Img">
+
+                </div>
+
+
+            </section>
+        </div>
+
+
+    </div>
+    <div  id="creador">
+        © 2023 Pedro JT
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
