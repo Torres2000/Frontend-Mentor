@@ -1,0 +1,258 @@
+/* importamos la fuentes para nuestro poryecto */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"); */
+
+/*
+Creamos las variables
+*/
+:root {
+  /* ## Colors
+
+### Primary */
+
+  --Tomato: hsl(4, 100%, 67%);
+  --Tomato2: hsla(4, 100%, 67%, 0.304);
+
+  /* ### Neutral */
+
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  /* font-family: "Roboto";
+  font-weight: normal;
+  */
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background-color: var(--Charcoal-Grey);
+  font-weight: 400;
+  color: var(--Charcoal-Grey);
+}
+main {
+  display: flex;
+  background-color: var(--White);
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.seccion-izquierda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 64px;
+  width: 376px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 56px;
+  margin: 0px 0px 20px 0px;
+}
+p {
+  width: 100%;
+  margin: 0px 0px 26px 0px;
+  line-height: 24px;
+}
+.casillas {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.casillas div {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.correo {
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.correo div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#error {
+  display: none;
+  color: var(--Tomato);
+}
+.email {
+  font-size: 12px;
+  font-weight: bold;
+}
+input {
+  padding: 18px;
+  border: 1px solid var(--Grey);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+input:hover {
+  border-color: var(--Charcoal-Grey);
+}
+input:focus {
+  outline: none;
+}
+::placeholder {
+  color: var(--Grey);
+}
+button {
+  width: 100%;
+  background-color: var(--Dark-Slate-Grey);
+  color: var(--White);
+  padding: 20px;
+  margin-top: 24px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+.active:hover {
+  /* Cambio de color con degradado */
+  background-color: var(--Tomato);
+
+  /* Sombras hacia abajo */
+  box-shadow: 0px 9px 16px var(--Tomato);
+}
+.disable {
+  background-color: var(--Dark-Slate-Grey);
+}
+.disable:hover {
+  /* Cambio de color con degradado */
+  background-color: var(--Dark-Slate-Grey);
+
+  /* Sombras hacia abajo */
+}
+.seccion-derecha {
+  margin: 24px 24px 24px 0px;
+}
+
+.confirmacion {
+  display: none;
+  background-color: var(--White);
+  width: 374px;
+  padding: 48px 64px 64px 64px;
+  border-radius: 36px;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  -ms-border-radius: 36px;
+  -o-border-radius: 36px;
+}
+.confirmacion h1 {
+  margin-top: 30px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.pc {
+  width: 100%;
+}
+.mobile {
+  display: none;
+}
+/*
+Responsi
+*/
+@media (max-width: 1000px) {
+  main {
+    margin: 4%;
+    border-radius: 4%;
+  }
+  .seccion-izquierda {
+    padding: 0% 0% 0% 4%;
+  }
+  .seccion-derecha {
+    margin: 2%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .correo {
+    margin-top: 8%;
+  }
+  p {
+    margin-bottom: 4%;
+  }
+  button {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  input {
+    font-size: 14px;
+    padding: 4%;
+  }
+  button {
+    padding: 5%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+  .pc {
+    display: none;
+  }
+  main {
+    flex-direction: column-reverse;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    justify-content: flex-end;
+  }
+  .seccion-derecha {
+    margin: 0;
+  }
+  .seccion-izquierda {
+    width: auto;
+    padding: 0;
+    margin: 10% 6%;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  p {
+    margin-bottom: 8%;
+  }
+  span {
+    line-height: 24px;
+  }
+  button {
+    margin-top: 8%;
+  }
+}
