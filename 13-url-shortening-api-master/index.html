@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL shortening API landing page</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container__menu">
+        <img src="./images/logo.svg" alt="Logo" />
+
+        <div class="menu">
+          <img src="./images/icon-menu.svg" alt="Menu" id="btn_menu" />
+
+          <div id="back_menu"></div>
+          <nav id="nav">
+            <div class="menu-lista">
+              <a href="#">Features </a>
+
+              <a href="#">Pricing </a>
+              <a href="#">Resourses</a>
+            </div>
+            <div class="login">
+              <a href="#">Login</a>
+              <button class="btn btn-signup">Sign Up</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contenido-principal">
+        <section class="contenido">
+          <div class="info">
+            <h1>More than just shorter links</h1>
+            <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+            <button class="btn btnContenido">Get Started</button>
+          </div>
+          <div class="img-ilustration">
+            <!-- <img src="./images/illustration-working.svg" alt="" /> -->
+          </div>
+        </section>
+      </section>
+
+      <!--Seccion Estadisticas-->
+      <section class="estadisticas">
+        <section class="estadisticas-url">
+          <section class="url">
+            <label id="label-error" class="label-error">Please add a link</label>
+            <input type="text" id="input-url" placeholder="Shorten a link here..." />
+            <button id="enviar-url">Shorten It!</button>
+          </section>
+          <section class="mostrar-url" id="mostrar"></section>
+        </section>
+
+        <section class="advanced">
+          <div class="contenido-estadisticas">
+            <h2>Advanced Statistics</h2>
+            <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="./images/icon-brand-recognition.svg" alt="" />
+              <span>Brand Recognition</span>
+              <p>
+                Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil
+                confidence in your content.
+              </p>
+            </div>
+            <hr class="hr1" />
+            <div class="card">
+              <img src="./images/icon-detailed-records.svg" alt="" />
+              <span>Detailed Records</span>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform
+                better decisions.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./images/icon-fully-customizable.svg" alt="" />
+              <span>DFully Customizable</span>
+              <span></span>
+              <p>
+                Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!--Seccion Bosost-->
+      <section class="boost">
+        <h3>Boost your links today</h3>
+        <button class="btn">Get Started</button>
+      </section>
+
+      <!--Seccion Footer-->
+      <section class="footer">
+        <img src="./images/logo.svg" alt="" />
+        <div class="links">
+          <h4>Features</h4>
+          <a href="#">Link Shortening</a>
+          <a href="#">Branded Links</a>
+          <a href="#">Analytics</a>
+        </div>
+        <div class="links">
+          <h4>Resources</h4>
+          <a href="#">Blog </a>
+          <a href="#">Developers </a>
+          <a href="#">Support</a>
+        </div>
+        <div class="links">
+          <h4>Company</h4>
+          <a href="#">About </a>
+          <a href="#">Our Team </a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="redes">
+          <img src="./images/icon-facebook.svg" alt="" />
+          <img src="./images/icon-twitter.svg" alt="" />
+          <img src="./images/icon-pinterest.svg" alt="" />
+          <img src="./images/icon-instagram.svg" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
